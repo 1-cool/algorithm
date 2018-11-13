@@ -13,8 +13,10 @@ void DFS(int x,int y)
     {
         xx=x+dir[i][0];
         yy=y+dir[i][1];
-        if(xx<0||xx>=n||yy<0||yy>=m)continue;//越界终止本次循环
-        if(grid[xx][yy]=='@')DFS(xx,yy);//如果方格还是‘@’，则继续搜索
+        if(xx<0||xx>=n||yy<0||yy>=m)
+            continue;//越界终止本次循环
+        if(grid[xx][yy]=='@')
+            DFS(xx,yy);//如果方格还是‘@’，则继续搜索
     }
 }
 
@@ -24,13 +26,18 @@ int main()
     int count;//油田数量计数
     while(scanf("%d%d",&n,&m)!=EOF)
     {
-        if(n==0&&m==0)break;
-            count=0;
-        for(i=0;i<n;i++)scanf("%s",grid[i]);
-            for(i=0;i<n;i++)
-                for(j=0;j<m;j++)
-                    if(grid[i][j]=='@'){DFS(i,j);count++;}//在（i,j）遍历，并且遍历了一个“油田”，计数器加1
-                        printf("%d\n",count);
+        if(n==0&&m==0)
+            break;
+        count=0;
+        for(i=0;i<n;i++)
+            scanf("%s",grid[i]);
+        for(i=0;i<n;i++)
+            for(j=0;j<m;j++)
+                if(grid[i][j]=='@')
+                {
+                    DFS(i,j);count++;
+                }//在（i,j）遍历，并且遍历了一个“油田”，计数器加1
+        printf("%d\n",count);
     }
     return 0;
 }

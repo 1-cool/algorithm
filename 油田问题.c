@@ -26,8 +26,6 @@ int main()
     {
         if(n==0&&m==0)break;
             count=0;
-        //memset(grid,0,sizeof(grid));
-
         for(i=0;i<n;i++)scanf("%s",grid[i]);
             for(i=0;i<n;i++)
                 for(j=0;j<m;j++)

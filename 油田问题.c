@@ -35,7 +35,8 @@ int main()
             for(j=0;j<n;j++)
                 if(grid[i][j]=='@')
                 {
-                    DFS(i,j);count++;
+                    DFS(i,j);
+                    count++;
                 }//在（i,j）遍历，并且遍历了一个“油田”，计数器加1
         printf("%d\n",count);
     }

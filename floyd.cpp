@@ -1,4 +1,4 @@
-//POJ - 2253 
+/*****************************POJ - 2253*****************************/
 #include <cstdio>
 #include <cmath>
 #include <cstring>
@@ -22,7 +22,6 @@ struct d
 int main()
 {
     int n, cnt = 1;
-    ;
     while (cin >> n && n != 0)
     {
         for (int i = 0; i < n; ++i)

@@ -1,4 +1,4 @@
-//POJ - 2387 
+/*****************************POJ - 2387********************************/
 #include <cstdio>
 #include <cmath>
 #include <cstring>

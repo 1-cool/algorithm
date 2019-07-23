@@ -1,3 +1,4 @@
+//HDU - 1241 
 #include <cstdio>
 #include <cmath>
 #include <cstring>

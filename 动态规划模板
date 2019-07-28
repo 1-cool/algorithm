@@ -1,7 +1,6 @@
 一、01背包问题
-```cpp
-#include <iostream>
-#include <algorithm>
+# include <iostream>
+# include <algorithm>
 
 using namespace std;
 
@@ -25,7 +24,6 @@ int main()
 
     return 0;
 }
-```
 
 
 二、完全背包问题

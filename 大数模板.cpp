@@ -1,16 +1,7 @@
-#include <cstdio>
-#include <cmath>
 #include <cstring>
 #include <iostream>
 #include <algorithm>
-#include <map>
-#include <set>
 #include <vector>
-#include <stack>
-#include <queue>
-#include <map>
-#include <list>
-#include <sstream>
 using namespace std;
 struct biginteger
 {
@@ -59,6 +50,11 @@ struct biginteger
         }
         return c;
     }
+    biginteger operator+=(const biginteger &b)
+    {
+        *this = *this + b;
+        return *this;
+    }
 };
 ostream &operator<<(ostream &out, const biginteger &x)
 {
@@ -86,5 +82,7 @@ int main()
     biginteger a, b, c;
     cin >> a >> b >> c;
     cout << a << ' ' << b << ' ' << c << endl;
+    c+=a;
+    cout << c;
     return 0;
 }
